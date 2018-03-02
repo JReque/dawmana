@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Jesús Requena Pérez</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css">
+   <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css">  
+   <link rel="stylesheet" href="css/main.css">
+
+   <script src="js/jquery-ui-1.12.1//external/jquery/jquery.js"></script>
+   <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+   <script src="js/inicio.js"></script>
+   <script src="js/actividades.js"></script>
+   <script src="js/ponentes.js"></script>
+   <script src="js/jquery.sysmanas_plugin.js"></script>
+   <script src="js/login.js"></script>
+   <script src="js/asistentes.js"></script>
+
+</head>
+<body>
+   <header>
+   <h1>DAWMANA</h1>
+   </header>
+   <div id="inicio"><img src="img/cartelSysmana.jpg"></div>
+   <div id="principal">
+   <nav>
+      <ul id="menu">
+         <li id="lactividades"><a href=""></a>Actividades</li>
+         <li id="lponentes"><a href=""></a>Ponentes</li>
+         <li id="asistentes"><a href=""></a>Asistentes</li>
+         <li id="sysmanas"><a href=""></a>Sysmanas</li>
+         <li id="login"><a href=""></a>Login</li>
+      </ul>
+   </nav>
+
+   <main>
+      <div id="actividades">
+      <h2>Actividades</h2>
+         <div id="tabs">
+            <ul>
+               <li><a href="#Lunes">Lunes</a></li>
+               <li><a href="#Martes">Martes</a></li>
+               <li><a href="#Miercoles">Miércoles</a></li>
+               <li><a href="#Jueves">Jueves</a></li>
+               <li><a href="#Viernes">Viernes</a></li>
+            </ul>
+            <div id="Lunes"></div>
+            <div id="Martes"></div>
+            <div id="Miercoles"></div>
+            <div id="Jueves"></div>
+            <div id="Viernes"></div>
+         </div>
+      </div>
+      <div id="ponentes">
+      <h2>Ponentes</h2>
+      </div>
+
+      <div id="FormAsistentes">
+         <h2>Asistentes</h2>
+         <form onsubmit="return validacion()">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre"/>
+            <span id="errorNombre"></span>
+            <label for="ap">Apellidos</label>
+            <input type="text" id="ap"/>
+            <span id="errorap"></span>
+            <label for="dni">DNI</label>
+            <input type="text" id="dni"/>
+            <span id="errorDni"></span>
+            <label for="email">E-mail</label>
+            <input type="text" id="email"/>
+            <span id="errorEmail"></span>            
+            <label for="procedencia">Procedencia</label>
+            <select id="opciones" name="opciones">
+               <option value="selec">--Selecciona un valor--</option>
+               <option value="ies">IES</option>
+               <option value="universidad">Universidad</option>
+               <option value="empresa">Empresa</option>
+            </select><br><br>
+            <spam id="errorProce"></spam>
+            <input type="submit" id="registrarse" /> 
+         </form>  
+      </div>
+
+      <div id="AllSysmanas">
+      </div>
+
+      <div id="FormLogin">
+         <h2>LOGIN</h2>
+         <form onsubmit="return validacion()">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="user"/>
+            <span id="errorUser"></span>
+            <label for="passwd">Contraseña</label>
+            <input type="password" id="pass"/>
+            <span id="errorPass"></span>
+            <input type="submit" id="enviarLogin" /> 
+         </form>  
+      </div>
+      
+   </main>
+   </div>
+   <footer>
+      <ul>
+         <li><img src="img/junta.jpg" alt=""></li>
+         <li><img src="img/Innovation_Group.png" alt=""></li>
+         <li><img src="img/Lazona.png" alt="">
+         <li><img src="img/dobuss.jpeg" alt=""></li>
+      </ul>
+   </footer>
+   
+
+</body>
+
+</html>
