@@ -15,6 +15,7 @@ body>header{
 }
 nav{
 	grid-area: nav;
+	padding-top: 5%;
 	background-color: white;
 	width: 20vw;	
 	height: 70vh;
@@ -107,14 +108,23 @@ main{
 #AllSysmanas{
     height: 100%;
 }
-#FormAsistentes, #FormLogin{
+#FormAsistentes, #FormLogin,  #FormEditar{
 	width: 50vh;
     padding: 4%;
 	background-color: white;
 }
-#FormAsistentes>form, #FormLogin>form{
+#FormAsistentes>form, #FormLogin>form, #FormEditar>form, #FormRegistro>form{
 	display: grid;
+	grid-gap: 0.5em;
 }
+
+#cerrarSesion{
+	width: fit-content;
+    position: absolute;
+    bottom: calc(100vh - 10vh);
+    right: calc(100vw - 95vw);
+}
+
 footer{
 	background-color: #303f9f;
 }

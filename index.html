@@ -99,8 +99,64 @@
             <span id="errorUser"></span>
             <label for="passwd">Contraseña</label>
             <input type="password" id="pass"/>
-            <span id="errorPass"></span>
-            <input type="submit" id="enviarLogin" /> 
+            <span id="errorPass"></span><br><br>
+            <input type="button" id="enviarLogin" value="Entrar" />
+            <span id="errorLogin"></span>
+            
+         </form>  
+      </div>
+
+      <div id="FormEditar">
+         <h2>Editar datos</h2>
+         <form onsubmit="return validacion()">
+            <span id="errornombre"></span>
+            <label id="lblNombre" for="nombre">Nombre:</label>
+            <input class="formControl" type="text" name="nombre" id="nombrePonen" placeholder="Nombre">
+            <span id="errorapellidos"></span>
+            <label id="lblApellidos" for="apellidos">Apellidos</label>
+            <input class="formControl" type="text" name="apellidos" id="apellidosPonen" placeholder="Apellidos">
+            <span id="errorprocedencia"></span>
+            <label id="lblProcedencia" for="procedencia">Procedencia</label>
+            <input class="formControl" type="text" name="procedencia" id="procedencia" placeholder="Procedencia">
+            <label for="diasPreferibles">Fecha inicio:</label>
+            <input class="formControl" type="text" name="diasPreferiblesFrom" id="diasPreferiblesFrom" placeholder="Primer día">
+            <label for="diasPreferibles">Fecha final:</label>
+            <input class="formControl" type="text" name="diasPreferiblesTo" id="diasPreferiblesTo" placeholder="Día final">
+            <span id="errorobservaciones"></span>
+            <label for="observaciones">Observaciones:</label>
+            <textarea class="formControl" name="observaciones" id="observaciones" cols="30" rows="6" placeholder="Observaciones"></textarea>
+            <label for="patrocinio" id="lblPatrocinio">¿Puede patrocinarnos?</label>
+            <input name="patrocinio" id="patrocinio" type="checkbox"><br><br>
+            <input type="button" id="editData" value="Guardar cambios" />
+         </form>  
+      </div>
+
+      <div id="FormRegistro">
+         <h2>Nueva ponencia</h2>
+         <form onsubmit="return validacion()">
+            <span id='errornombreActividad'></span>
+            <label for='nombreActividad'>Nombre de la actividad:</label>
+            <input class='formControl' type='text' id='nombreActividad' name='nombreActividad' placeholder='Nombre de la actividad...'>
+            <span id='errordescBreve'></span>
+            <label for='descBreve'>Descripción breve</label>
+            <input class='formControl' type='text' id='descBreve' name='descBreve' placeholder='Breve descripción...'>
+            <span id='errordescExt'></span>
+            <label for='descExt'>Descripción extensa:</label>
+            <textarea class='formControl' name='descExt' id='descExt' cols='30' rows='10' placeholder='Descripción extensa...'></textarea>
+            <span id='errorimagen'></span>
+            <label for='imagen'>Imagen:</label>
+            <input type='file' id='imagen' name='imagen'>
+            <span id='errormaterialPonente'></span>
+            <label for='materialPonente'>Material para el ponente:</label>
+            <input class='formControl' type='text' id='materialPonente' name='materialPonente' placeholder='Proyector, Conexión WIFI, Conexión Ethernet, Software necesario...'>
+            <span id='errormaterialAsistentes'></span>
+            <label for='materialAsistentes'>Material para los asistentes:</label>
+            <input class='formControl' type='text' id='materialAsistentes' name='materialAsistentes' placeholder='Equipo, Windows/Linux, Eclipse, Navegador, Editor de textos...'>
+            <span id='errornumAsistentes'></span>
+            <label for='numAsistentes'>Número de asistentes recomendados:</label>
+            <input class='formControl' type='number' id='numAsistentes' name='numAsistentes' placeholder='Número de asistentes recomendados...'>
+            <div id='botonesForm'>
+            <input type='submit' id='btnCrearPonencia' value='Crear ponencia'>
          </form>  
       </div>
       
